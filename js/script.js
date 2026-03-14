@@ -70,3 +70,15 @@ toggleActions:"play none none none"
 });
 
 });
+
+gsap.to(".navbar",{
+
+padding:"10px 50px",
+
+scrollTrigger:{
+trigger:".hero",
+start:"bottom top",
+scrub:true
+}
+
+});
