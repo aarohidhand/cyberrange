@@ -1,0 +1,41 @@
+.repo-card { padding: 28px; }
+
+.repo-name {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.repo-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.repo-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.repo-stars {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+  color: var(--orange);
+}
+
+.repo-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: auto;
+  transition: color 0.25s ease;
+}
+
+.repo-link:hover { color: var(--orange); }

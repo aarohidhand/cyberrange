@@ -1,0 +1,132 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg-img {
+  position: absolute;
+  inset: 0;
+  background: url('/photos/lab.jpeg') center/cover no-repeat;
+  filter: brightness(0.35) saturate(0.8);
+  animation: kenburns 20s ease-in-out infinite alternate;
+}
+
+.hero__grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,101,0,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,101,0,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  animation: gridDrift 30s linear infinite;
+}
+
+.hero__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 40%, var(--dark-navy) 100%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding: 160px 0 120px;
+}
+
+.hero-badge {
+  margin-bottom: 28px;
+  animation: badgePulse 3s ease-in-out infinite;
+}
+
+.hero-badge .badge-dot {
+  animation: dotBlink 1.2s step-end infinite;
+}
+
+.hero-title {
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+}
+
+.hero-title .line {
+  display: block;
+}
+
+.hero-title--accent {
+  color: var(--orange);
+  -webkit-text-fill-color: var(--orange);
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+
+.hero__btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ─── Stats Bar ─── */
+.stats-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border);
+}
+
+.stats-bar__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+}
+
+.stat-value {
+  display: block;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.stat-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-top: 4px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero__content { padding: 120px 0 80px; }
+  .hero-sub { font-size: 16px; }
+  .stats-bar__inner { flex-wrap: wrap; gap: 16px; }
+  .stat { min-width: 40%; }
+}

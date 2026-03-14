@@ -1,0 +1,49 @@
+/* ═══ KEYFRAME ANIMATIONS ═══ */
+
+/* Ken Burns hero zoom */
+@keyframes kenburns {
+  0% { transform: scale(1.03); }
+  100% { transform: scale(1.09); }
+}
+
+/* Grid overlay drift */
+@keyframes gridDrift {
+  0% { background-position: 0 0; }
+  100% { background-position: 60px 60px; }
+}
+
+/* Badge pulse */
+@keyframes badgePulse {
+  0%, 100% { border-color: rgba(255,101,0,0.25); }
+  50% { border-color: rgba(255,101,0,0.7); }
+}
+
+/* Dot blink */
+@keyframes dotBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Terminal cursor blink */
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Underline expand */
+@keyframes underlineExpand {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+/* Fade in up */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Spin slow (for decorative elements) */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

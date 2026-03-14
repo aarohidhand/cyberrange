@@ -1,0 +1,187 @@
+/* ─── About Section ─── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.about-img-wrap {
+  position: relative;
+  border-radius: 12px;
+  overflow: visible;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.about-img-corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.about-img-corner--tl {
+  top: -8px;
+  left: -8px;
+  border-top: 2px solid var(--orange);
+  border-left: 2px solid var(--orange);
+}
+
+.about-img-corner--br {
+  bottom: -8px;
+  right: -8px;
+  border-bottom: 2px solid var(--orange);
+  border-right: 2px solid var(--orange);
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.feature-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--orange-dim);
+  border-radius: 10px;
+}
+
+.feature-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ─── Collab Cards ─── */
+.collab-card {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.collab-flag {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.collab-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.collab-country {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ─── Mentor Cards ─── */
+.mentor-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.mentor-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.mentor-role {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ─── Activity Cards ─── */
+.activity-card {
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.activity-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.activity-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.activity-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ─── Flagship Items ─── */
+.flagship-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.flagship-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.flagship-accent {
+  width: 3px;
+  min-height: 100%;
+  background: var(--orange);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.flagship-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.flagship-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .flagship-list { grid-template-columns: 1fr; }
+}

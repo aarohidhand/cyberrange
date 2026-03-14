@@ -1,0 +1,30 @@
+.research-card { padding: 32px; }
+
+.research-id {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(255,101,0,0.2);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.research-card-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.research-card-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

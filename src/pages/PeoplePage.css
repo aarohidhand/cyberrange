@@ -1,0 +1,18 @@
+.people-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.people-name {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.people-role {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  color: var(--text-muted);
+}

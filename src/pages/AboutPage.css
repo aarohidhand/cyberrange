@@ -1,0 +1,20 @@
+.about-hero { padding-top: 140px; }
+
+.about-text {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.mission-card { padding: 40px; }
+
+.about-platform-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .about-platform-grid { grid-template-columns: 1fr; }
+}

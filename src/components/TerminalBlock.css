@@ -1,0 +1,54 @@
+.terminal {
+  background: #0a0a0a;
+  border: 1px solid rgba(255,101,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px;
+}
+
+.terminal__header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(255,101,0,0.15);
+}
+
+.terminal__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.terminal__dot--r { background: #ff5f57; }
+.terminal__dot--y { background: #febc2e; }
+.terminal__dot--g { background: #28c840; }
+
+.terminal__title {
+  margin-left: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.terminal__body {
+  padding: 20px;
+  min-height: 260px;
+  line-height: 1.8;
+}
+
+.terminal__line {
+  color: #00ff41;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.terminal__line--cmd {
+  color: #fff;
+}
+
+.terminal__cursor {
+  color: #00ff41;
+  animation: cursorBlink 0.8s step-end infinite;
+}

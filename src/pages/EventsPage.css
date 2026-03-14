@@ -1,0 +1,65 @@
+.events-timeline { display: flex; flex-direction: column; gap: 16px; }
+
+.event-item { display: flex; gap: 24px; align-items: flex-start; }
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 60px;
+  padding: 12px;
+  background: var(--orange-dim);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.event-month {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--orange);
+}
+
+.event-day {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+}
+
+.event-body { flex: 1; }
+
+.event-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.event-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.event-badge {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.event-desc {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 480px) {
+  .event-item { flex-direction: column; gap: 12px; }
+}

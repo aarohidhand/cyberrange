@@ -1,0 +1,50 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 12px; }
+
+.info-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+}
+
+.info-icon { font-size: 24px; flex-shrink: 0; }
+
+.info-label {
+  display: block;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--orange);
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 14px;
+  color: var(--text);
+  display: block;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+}
