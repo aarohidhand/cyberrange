@@ -56,7 +56,7 @@ export default function Navbar() {
                 </Link>
               )
             })}
-            <Link to="/contact" className="btn btn-primary navbar__contact-btn">Contact</Link>
+            <Link to="/contact" className="btn btn-primary navbar__contact-btn">Get in Contact</Link>
           </nav>
 
           <button className={`navbar__hamburger ${mobileOpen ? 'navbar__hamburger--open' : ''}`} onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
@@ -78,7 +78,7 @@ export default function Navbar() {
                 </Link>
               )
             })}
-            <Link to="/contact" className="btn btn-primary" style={{ marginTop: 16, width: '100%', justifyContent: 'center' }}>Contact</Link>
+            <Link to="/contact" className="btn btn-primary" style={{ marginTop: 16, width: '100%', justifyContent: 'center' }}>Get in Contact</Link>
           </nav>
         </div>
       </div>

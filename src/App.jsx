@@ -4,7 +4,6 @@ import gsap from 'gsap'
 
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import CustomCursor from './components/CustomCursor'
 
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
@@ -64,7 +63,6 @@ export default function App() {
   return (
     <Router>
       <div className="page-wrapper">
-        <CustomCursor />
         <Navbar />
         <AnimatedRoutes />
         <Footer />

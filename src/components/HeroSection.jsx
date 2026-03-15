@@ -53,7 +53,7 @@ export default function HeroSection() {
       <div className="container hero__content">
         <div className="hero-badge badge">
           <span className="badge-dot" />
-          <span>MUJ-Cyberange Cyberange Lab</span>
+          <span>MUJ X CYBERANGE LAB</span>
         </div>
 
         <h1 className="hero-title">
