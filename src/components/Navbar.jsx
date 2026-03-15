@@ -21,10 +21,25 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50)
+    // On non-home pages, keep navbar in \"scrolled\" state always.
+    if (location.pathname !== '/') {
+      setScrolled(true)
+      return
+    }
+
+    const onScroll = () => {
+      const aboutSection = document.querySelector('.about-section')
+      const triggerY = aboutSection
+        ? aboutSection.offsetTop - (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h')) || 70)
+        : window.innerHeight * 0.7
+      setScrolled(window.scrollY >= triggerY)
+    }
+
     window.addEventListener('scroll', onScroll)
+    // run once on mount to set initial state on home
+    onScroll()
     return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  }, [location.pathname])
 
   useEffect(() => {
     setMobileOpen(false)
