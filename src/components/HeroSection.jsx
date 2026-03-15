@@ -53,7 +53,7 @@ export default function HeroSection() {
       <div className="container hero__content">
         <div className="hero-badge badge">
           <span className="badge-dot" />
-          <span>MUJ-ISAC CYBER RANGE LAB</span>
+          <span>MUJ-Cyberange Cyberange Lab</span>
         </div>
 
         <h1 className="hero-title">
@@ -63,7 +63,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="hero-sub">
-          India's premier cybersecurity research lab — bridging academia and industry through advanced cyber range training, threat intelligence, and smart city security research.
+          India's premier cybersecurity research lab — bridging academia and industry through advanced Cyberange training, threat intelligence, and smart city security research.
         </p>
 
         <div className="hero__btns">

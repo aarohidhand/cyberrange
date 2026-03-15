@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react'
 import './TerminalBlock.css'
 
 const defaultLines = [
-  '$ systemctl status cyberrange --no-pager',
-  '● cyberrange.service - MUJ-ISAC Cyber Range Platform',
-  '   Loaded: loaded (/etc/systemd/system/cyberrange.service)',
+  '$ systemctl status Cyberange --no-pager',
+  '● Cyberange.service - MUJ-Cyberange Cyberange Platform',
+  '   Loaded: loaded (/etc/systemd/system/Cyberange.service)',
   '   Active: active (running) since Mon 2026-03-14 09:00:01 IST',
-  '   CGroup: /system.slice/cyberrange.service',
+  '   CGroup: /system.slice/Cyberange.service',
   '',
   '$ nmap -sV --script vuln 10.0.1.0/24',
   'Starting Nmap 7.94SVN ( https://nmap.org )',
@@ -74,7 +74,7 @@ export default function TerminalBlock({ lines = defaultLines }) {
         <span className="terminal__dot terminal__dot--r" />
         <span className="terminal__dot terminal__dot--y" />
         <span className="terminal__dot terminal__dot--g" />
-        <span className="terminal__title">cyberrange-terminal</span>
+        <span className="terminal__title">Cyberange-terminal</span>
       </div>
       <div className="terminal__body">
         {displayedLines.map((line, i) => (

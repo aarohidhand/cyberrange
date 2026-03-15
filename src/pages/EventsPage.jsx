@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const events = [
   { month: 'MAR', day: '22', title: 'Smart Grid Security Workshop', desc: 'Hands-on workshop on SCADA/ICS vulnerability assessment and defensive strategies for smart grid infrastructure.', type: 'Workshop' },
-  { month: 'APR', day: '05', title: 'CyberRange CTF 2026', desc: 'Annual Capture-the-Flag competition featuring challenges in web exploitation, reverse engineering, cryptography, and forensics.', type: 'Competition' },
+  { month: 'APR', day: '05', title: 'Cyberange CTF 2026', desc: 'Annual Capture-the-Flag competition featuring challenges in web exploitation, reverse engineering, cryptography, and forensics.', type: 'Competition' },
   { month: 'APR', day: '18', title: 'AI-Driven Threat Intelligence', desc: 'Guest lecture on leveraging machine learning for real-time threat detection and automated incident response.', type: 'Lecture' },
   { month: 'MAY', day: '10', title: 'Red vs Blue Team Drill', desc: 'Full-day adversarial simulation exercise with live-fire scenarios on emulated critical infrastructure.', type: 'Exercise' },
   { month: 'JUN', day: '14', title: 'International Cybersecurity Symposium', desc: 'Multi-day symposium with international speakers on the future of smart city security and critical infrastructure defense.', type: 'Conference' },

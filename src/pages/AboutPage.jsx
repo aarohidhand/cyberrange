@@ -42,7 +42,7 @@ export default function AboutPage() {
       <section className="section about-hero">
         <div className="container">
           <div className="section-label">// About</div>
-          <h1 className="section-title" style={{ fontSize: 'clamp(36px, 6vw, 64px)' }}>MUJ-ISAC<br />Cyber Range Lab</h1>
+          <h1 className="section-title" style={{ fontSize: 'clamp(36px, 6vw, 64px)' }}>MUJ-Cyberange<br />Cyberange Lab</h1>
           <p className="section-subtitle">Inspired by Life · Secured by Research</p>
         </div>
       </section>
@@ -91,11 +91,11 @@ export default function AboutPage() {
       <section className="section about-platform">
         <div className="container">
           <div className="section-label">// The Platform</div>
-          <h2 className="section-title">The ISAC CyberRange Platform</h2>
+          <h2 className="section-title">The Cyberange Cyberange Platform</h2>
           <p className="section-subtitle">A comprehensive, highly scalable simulation environment mirroring real-world industrial control systems and IoT networks.</p>
           <div className="about-platform-grid">
             <div className="about-platform-img">
-              <img src="/photos/lab.png" alt="CyberRange Platform" style={{ width: '100%', borderRadius: 12 }} />
+              <img src="/photos/lab.png" alt="Cyberange Platform" style={{ width: '100%', borderRadius: 12 }} />
             </div>
             <div className="about-platform-terminal">
               <TerminalBlock />

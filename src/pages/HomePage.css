@@ -63,7 +63,7 @@
 }
 
 .feature-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 4px;
@@ -88,18 +88,21 @@
 }
 
 .collab-name {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 12px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 4px;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
 }
 
 .collab-country {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.08em;
 }
 
 /* ─── Mentor Cards ─── */
@@ -110,16 +113,20 @@
 }
 
 .mentor-name {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 13px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
   font-weight: 600;
   margin-bottom: 4px;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
 }
 
 .mentor-role {
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 11px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-muted);
+  letter-spacing: 0.02em;
 }
 
 /* ─── Activity Cards ─── */
@@ -135,7 +142,7 @@
 }
 
 .activity-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -169,7 +176,7 @@
 }
 
 .flagship-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;

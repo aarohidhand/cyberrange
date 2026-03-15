@@ -6,8 +6,9 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Research', path: '/research' },
-  { name: 'Cyber Range', path: '/cyberrange' },
-  { name: 'People', path: '/people' },
+  { name: 'Cyberange', path: '/cyberrange' },
+  { name: 'Team', path: '/team' },
+  { name: 'Collaborators', path: '/collaborators' },
   { name: 'Opportunities', path: '/opportunities' },
   { name: 'Events', path: '/events' },
   { name: 'Publications', path: '/publications' },
@@ -39,10 +40,10 @@ export default function Navbar() {
       <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
         <div className="navbar__inner container">
           <Link to="/" className="navbar__brand">
-            <img src="/photos/logo.png" alt="MUJ-ISAC" className="navbar__logo" />
+            <img src="/photos/logo.png" alt="MUJ-Cyberange" className="navbar__logo" />
             <div className="navbar__brand-text">
-              <span className="navbar__brand-name">MUJ-ISAC</span>
-              <span className="navbar__brand-sub">Cyber Range Lab</span>
+              <span className="navbar__brand-name">MUJ-Cyberange</span>
+              <span className="navbar__brand-sub">Cyberange Lab</span>
             </div>
           </Link>
 

@@ -5,8 +5,9 @@ const footerNav = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Research', path: '/research' },
-  { name: 'Cyber Range', path: '/cyberrange' },
-  { name: 'People', path: '/people' },
+  { name: 'Cyberange', path: '/cyberrange' },
+  { name: 'Team', path: '/team' },
+  { name: 'Collaborators', path: '/collaborators' },
 ]
 
 const footerEngage = [
@@ -26,9 +27,9 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <Link to="/" className="footer__logo-link">
-            <img src="/photos/logo.png" alt="MUJ-ISAC" className="footer__logo" />
+            <img src="/photos/logo.png" alt="MUJ-Cyberange" className="footer__logo" />
           </Link>
-          <span className="footer__tagline">MUJ-ISAC Cyber Range Lab</span>
+          <span className="footer__tagline">MUJ-Cyberange Cyberange Lab</span>
           <p className="footer__desc">
             Pioneering smart city cybersecurity through cutting-edge research, immersive training, and global collaboration.
           </p>
@@ -51,7 +52,7 @@ export default function Footer() {
       </div>
 
       <div className="container footer__bottom">
-        <span className="footer__copy">© {new Date().getFullYear()} MUJ-ISAC Cyber Range Lab</span>
+        <span className="footer__copy">© {new Date().getFullYear()} MUJ-Cyberange Cyberange Lab</span>
         <span className="footer__motto">INSPIRED BY LIFE · SECURED BY RESEARCH</span>
       </div>
     </footer>

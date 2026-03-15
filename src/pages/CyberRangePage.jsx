@@ -14,7 +14,7 @@ const modules = [
   { icon: '⚔️', title: 'Red/Blue Team Arena', desc: 'Purpose-built adversarial simulation environment with isolated attack and defense networks.' },
 ]
 
-export default function CyberRangePage() {
+export default function CyberangePage() {
   const pageRef = useRef(null)
 
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function CyberRangePage() {
       <section className="section" style={{ paddingTop: 140 }}>
         <div className="container">
           <div className="section-label">// Infrastructure</div>
-          <h1 className="section-title cr-hero-title" style={{ fontSize: 'clamp(36px, 6vw, 64px)' }}>Cyber Range</h1>
+          <h1 className="section-title cr-hero-title" style={{ fontSize: 'clamp(36px, 6vw, 64px)' }}>Cyberange</h1>
           <p className="section-subtitle">The core infrastructure powering our research — a scalable, isolated network simulation for offensive and defensive operations.</p>
         </div>
       </section>
@@ -42,7 +42,7 @@ export default function CyberRangePage() {
       <section className="cr-banner">
         <div className="container">
           <div className="cr-banner-wrap">
-            <img src="/photos/lab.jpeg" alt="CyberRange Lab" className="cr-banner-img" />
+            <img src="/photos/lab.png" alt="Cyberange Lab" className="cr-banner-img" />
             <div className="cr-banner-overlay">
               <span className="cr-banner-label">LIVE ENVIRONMENT</span>
               <p className="cr-banner-text">Full-scale smart city miniature model with active sensor networks, SCADA controllers, and IoT edge devices.</p>
@@ -72,7 +72,7 @@ export default function CyberRangePage() {
       {/* Bottom photo */}
       <section className="section">
         <div className="container">
-          <img src="/photos/lab.jpeg" alt="Lab Overview" className="cr-bottom-img" />
+          <img src="/photos/lab.png" alt="Lab Overview" className="cr-bottom-img" />
         </div>
       </section>
     </div>

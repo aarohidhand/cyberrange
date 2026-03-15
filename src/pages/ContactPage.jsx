@@ -6,9 +6,9 @@ const roles = ['Student (MUJ)', 'External Student/Researcher', 'Industry Profess
 const purposes = ['Join the Lab', 'Research Collaboration', 'Industry Partnership', 'General Inquiry']
 
 const infoCards = [
-  { icon: '✉️', label: 'Email', value: 'cyberrange@mahe.edu.in' },
+  { icon: '✉️', label: 'Email', value: 'Cyberange@mahe.edu.in' },
   { icon: '📍', label: 'Location', value: 'MUJ, Jaipur 303007, Rajasthan, India' },
-  { icon: '🔗', label: 'LinkedIn', value: 'MUJ-ISAC CyberRange' },
+  { icon: '🔗', label: 'LinkedIn', value: 'MUJ-Cyberange Cyberange' },
   { icon: '💻', label: 'GitHub', value: 'github.com/mahe-isac' },
 ]
 

@@ -33,7 +33,7 @@ export default function OpenSourcePage() {
         <div className="container">
           <div className="section-label">// GitHub Repositories</div>
           <h1 className="section-title oss-hero-title" style={{ fontSize: 'clamp(36px, 6vw, 64px)' }}>Open Source</h1>
-          <p className="section-subtitle">Tools, datasets, and frameworks built by MUJ-ISAC and released freely to the security community.</p>
+          <p className="section-subtitle">Tools, datasets, and frameworks built by MUJ-Cyberange and released freely to the security community.</p>
 
           <div className="grid-2" style={{ gap: 16 }}>
             {repos.map((r, i) => (

@@ -10,7 +10,7 @@ const publications = [
   { type: 'IEEE', year: '2025', title: 'Deep Reinforcement Learning for Adaptive Intrusion Detection in IoT Networks', meta: 'R. Verma, S. Joshi — IEEE Internet of Things Journal' },
   { type: 'ACM', year: '2024', title: 'Privacy-Preserving Federated Learning for Distributed Threat Intelligence', meta: 'P. Sharma, M. K. Mishra — ACM Computing Surveys' },
   { type: 'Springer', year: '2024', title: 'Quantum-Resistant Cryptographic Protocols for Municipal IoT Infrastructure', meta: 'P. Sharma — Lecture Notes in Computer Science, Springer' },
-  { type: 'Technical Report', year: '2024', title: 'MUJ-ISAC Smart City Threat Landscape Report 2024', meta: 'CyberRange Research Team — Internal Technical Report' },
+  { type: 'Technical Report', year: '2024', title: 'MUJ-Cyberange Smart City Threat Landscape Report 2024', meta: 'Cyberange Research Team — Internal Technical Report' },
 ]
 
 export default function PublicationsPage() {
@@ -32,7 +32,7 @@ export default function PublicationsPage() {
         <div className="container">
           <div className="section-label">// Academic Output</div>
           <h1 className="section-title pub-hero-title" style={{ fontSize: 'clamp(36px, 6vw, 64px)' }}>Publications</h1>
-          <p className="section-subtitle">Peer-reviewed research, technical reports, and whitepapers from the CyberRange faculty and students.</p>
+          <p className="section-subtitle">Peer-reviewed research, technical reports, and whitepapers from the Cyberange faculty and students.</p>
 
           <div className="pub-list">
             {publications.map((p, i) => (

@@ -31,7 +31,7 @@ const mentors = [
 
 const studentActivities = [
   { icon: '🔬', title: 'Research', desc: 'Publish papers in top-tier security conferences and journals.' },
-  { icon: '🎯', title: 'Cyber Range Training', desc: 'Hands-on offensive and defensive exercises on realistic environments.' },
+  { icon: '🎯', title: 'Cyberange Training', desc: 'Hands-on offensive and defensive exercises on realistic environments.' },
   { icon: '🛠️', title: 'Product Development', desc: 'Build enterprise-grade security tools and platforms.' },
   { icon: '🏆', title: 'Hackathons', desc: 'Compete in national and international CTF competitions.' },
   { icon: '💻', title: 'Open Source', desc: 'Contribute to critical open-source security projects.' },
@@ -41,7 +41,7 @@ const studentActivities = [
 ]
 
 const flagshipActivities = [
-  { title: 'Cyber Range Exercises', desc: 'Full-spectrum attack and defense simulations on emulated critical infrastructure.' },
+  { title: 'Cyberange Exercises', desc: 'Full-spectrum attack and defense simulations on emulated critical infrastructure.' },
   { title: 'Red vs Blue Team Drills', desc: 'Adversarial exercises pitting offensive and defensive squads in real-time scenarios.' },
   { title: 'CTF Competitions', desc: 'Regular Capture-the-Flag events covering crypto, reverse engineering, and web exploitation.' },
   { title: 'Industry Workshops', desc: 'Expert-led sessions on emerging threats, tools, and defensive strategies.' },
@@ -51,7 +51,7 @@ const flagshipActivities = [
 
 const features = [
   { icon: '🏙️', title: 'Smart City Cybersecurity', desc: 'Protecting next-generation urban infrastructure from cyber threats.' },
-  { icon: '🎯', title: 'Cyber Range Training', desc: 'Immersive simulated environments for offensive and defensive operations.' },
+  { icon: '🎯', title: 'Cyberange Training', desc: 'Immersive simulated environments for offensive and defensive operations.' },
   { icon: '🤝', title: 'Research + Industry Collaboration', desc: 'Bridging academia and industry through joint projects and mentorship.' },
   { icon: '🚀', title: 'Student Opportunities', desc: 'Multiple tracks for research, innovation, and professional development.' },
 ]
@@ -100,13 +100,13 @@ export default function HomePage() {
           <h2 className="section-title">Where Research Meets Real-World Defense</h2>
           <div className="about-grid">
             <div className="about-img-wrap">
-              <img src="/photos/lab.jpeg" alt="CyberRange Lab" className="about-img" />
+              <img src="/photos/lab.png" alt="Cyberange Lab" className="about-img" />
               <div className="about-img-corner about-img-corner--tl" />
               <div className="about-img-corner about-img-corner--br" />
             </div>
             <div className="about-text-wrap">
               <p className="section-subtitle" style={{ marginBottom: 32 }}>
-                MUJ-ISAC Cyber Range Lab is a state-of-the-art cybersecurity research facility focused on smart city security, critical infrastructure protection, and next-generation defense technologies.
+                MUJ-Cyberange Cyberange Lab is a state-of-the-art cybersecurity research facility focused on smart city security, critical infrastructure protection, and next-generation defense technologies.
               </p>
               <div className="features-list">
                 {features.map((f, i) => (
@@ -193,7 +193,7 @@ export default function HomePage() {
         <div className="container">
           <div className="section-label">// Flagship Activities</div>
           <h2 className="section-title">Core Programs</h2>
-          <p className="section-subtitle">Our signature programs that define the CyberRange experience.</p>
+          <p className="section-subtitle">Our signature programs that define the Cyberange experience.</p>
           <div className="flagship-list">
             {flagshipActivities.map((f, i) => (
               <div key={i} className="card flagship-item">

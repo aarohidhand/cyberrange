@@ -9,8 +9,9 @@ import CustomCursor from './components/CustomCursor'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import ResearchPage from './pages/ResearchPage'
-import CyberRangePage from './pages/CyberRangePage'
+import CyberangePage from './pages/CyberRangePage'
 import PeoplePage from './pages/PeoplePage'
+import CollaboratorsPage from './pages/CollaboratorsPage'
 import OpportunitiesPage from './pages/OpportunitiesPage'
 import EventsPage from './pages/EventsPage'
 import PublicationsPage from './pages/PublicationsPage'
@@ -46,8 +47,9 @@ function AnimatedRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/research" element={<ResearchPage />} />
-        <Route path="/cyberrange" element={<CyberRangePage />} />
-        <Route path="/people" element={<PeoplePage />} />
+        <Route path="/cyberrange" element={<CyberangePage />} />
+        <Route path="/team" element={<PeoplePage />} />
+        <Route path="/collaborators" element={<CollaboratorsPage />} />
         <Route path="/opportunities" element={<OpportunitiesPage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/publications" element={<PublicationsPage />} />
