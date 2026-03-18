@@ -45,9 +45,12 @@ ul, ol { list-style: none; }
 input, textarea, select { font-family: 'Rajdhani', sans-serif; }
 
 /* ═══ SCROLLBAR ═══ */
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--orange); border-radius: 3px; }
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgba(255,101,0,0.35);
+  border-radius: 3px;
+}
 
 /* ═══ SELECTION ═══ */
 ::selection { background: rgba(255,101,0,0.3); color: #fff; }
@@ -77,9 +80,9 @@ input, textarea, select { font-family: 'Rajdhani', sans-serif; }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1320px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
 }
 
 .page-content {
@@ -254,6 +257,39 @@ input, textarea, select { font-family: 'Rajdhani', sans-serif; }
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4, .grid-5 { grid-template-columns: 1fr; }
   .section { padding: 64px 0; }
+}
+
+/* ═══ LARGE DESKTOP TWEAKS (≥1600px) ═══ */
+@media (min-width: 1600px) {
+  :root {
+    --nav-h: 84px;
+  }
+
+  body {
+    font-size: 17px;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 0 48px;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  .section-title {
+    font-size: clamp(32px, 3.2vw, 56px);
+  }
+
+  .section-subtitle {
+    font-size: 19px;
+    max-width: 720px;
+  }
+
+  .card {
+    padding: 36px;
+  }
 }
 
 /* ═══ TAG PILLS ═══ */

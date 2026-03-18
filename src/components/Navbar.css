@@ -33,7 +33,7 @@
 }
 
 .navbar__logo {
-  height: 42px;
+  height: 38px;
   width: auto;
   filter: drop-shadow(0 0 8px var(--orange-glow));
 }
@@ -42,12 +42,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .navbar__brand-name {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 1px;
@@ -102,8 +102,8 @@
 .navbar__link--active { color: var(--orange); }
 
 .navbar__contact-btn {
-  margin-left: 8px;
-  padding: 8px 18px !important;
+  margin-left: 16px;
+  padding: 10px 20px !important;
 }
 
 .navbar__hamburger {
@@ -188,4 +188,51 @@
 @media (max-width: 1100px) {
   .navbar__nav { display: none; }
   .navbar__hamburger { display: flex; }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 64px;
+  }
+
+  .navbar__logo {
+    height: 32px;
+  }
+
+  .navbar__brand-name {
+    font-size: 12px;
+  }
+
+  .navbar__brand-sub {
+    font-size: 9px;
+  }
+
+  .navbar__inner {
+    gap: 8px;
+  }
+
+  .navbar__contact-btn {
+    padding: 8px 14px !important;
+    font-size: 9px !important;
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar__logo { height: 48px; }
+
+  .navbar__brand-name { font-size: 16px; }
+  .navbar__brand-sub { font-size: 11px; }
+
+  .navbar__nav { gap: 8px; }
+
+  .navbar__link {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    padding: 10px 12px;
+  }
+
+  .navbar__contact-btn {
+    padding: 12px 22px !important;
+    font-size: 11px !important;
+  }
 }

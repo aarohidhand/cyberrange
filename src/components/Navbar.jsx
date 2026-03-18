@@ -58,7 +58,7 @@ export default function Navbar() {
             <img src="/photos/logo.png" alt="MUJ-Cyberange" className="navbar__logo" />
             <div className="navbar__brand-text">
               <span className="navbar__brand-name">MUJ-Cyberange</span>
-              <span className="navbar__brand-sub">Cyberange Lab</span>
+              <span className="navbar__brand-sub">Cyber Security Lab</span>
             </div>
           </Link>
 
@@ -71,8 +71,9 @@ export default function Navbar() {
                 </Link>
               )
             })}
-            <Link to="/contact" className="btn btn-primary navbar__contact-btn">Get in Contact</Link>
           </nav>
+
+          <Link to="/contact" className="btn btn-primary navbar__contact-btn">Get in Contact</Link>
 
           <button className={`navbar__hamburger ${mobileOpen ? 'navbar__hamburger--open' : ''}`} onClick={() => setMobileOpen(!mobileOpen)} aria-label="Menu">
             <span /><span /><span />

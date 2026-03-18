@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import gsap from 'gsap'
+import { useMediaQuery } from 'react-responsive'
 import './HeroSection.css'
 
 const stats = [
@@ -12,6 +13,8 @@ const stats = [
 
 export default function HeroSection() {
   const heroRef = useRef(null)
+  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1024 })
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1023 })
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -73,22 +76,24 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="stats-bar">
-        <div className="container stats-bar__inner">
-          {stats.map((s, i) => (
-            <div key={i} className="stat">
-              <span
-                className="stat-value"
-                data-count={s.value}
-                data-suffix={s.suffix}
-              >
-                {s.display || '0' + s.suffix}
-              </span>
-              <span className="stat-label">{s.label}</span>
-            </div>
-          ))}
+      {isDesktopOrLaptop && (
+        <div className="stats-bar">
+          <div className="container stats-bar__inner">
+            {stats.map((s, i) => (
+              <div key={i} className="stat">
+                <span
+                  className="stat-value"
+                  data-count={s.value}
+                  data-suffix={s.suffix}
+                >
+                  {s.display || '0' + s.suffix}
+                </span>
+                <span className="stat-label">{s.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </section>
   )
 }
