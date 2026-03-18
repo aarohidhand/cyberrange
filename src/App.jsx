@@ -45,7 +45,7 @@ function AnimatedRoutes() {
     <PageTransitionWrapper key={location.pathname}>
       <Routes location={location}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<ApplyPage />} />
+        <Route path="/apply" element={<ApplyPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/training" element={<TrainingPage />} />
         <Route path="/research" element={<ResearchPage />} />
