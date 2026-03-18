@@ -73,10 +73,9 @@ export default function Navbar() {
                 </Link>
               )
             })}
-<<<<<<< HEAD
-=======
-            <Link to="/apply" className="btn btn-primary navbar__contact-btn">Apply Now</Link>
->>>>>>> ceae68e5f21f4ca8e70d9cb4d09526402a45140d
+<Link to="/apply" className="btn btn-primary navbar__contact-btn">
+  Apply Now
+</Link>
           </nav>
 
           <Link to="/contact" className="btn btn-primary navbar__contact-btn">Get in Contact</Link>
