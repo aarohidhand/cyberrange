@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 
 import HomePage from './pages/HomePage'
 import ResearchPage from './pages/ResearchPage'
-import CyberangePage from './pages/CyberRangePage'
+import CyberangePage from './pages/CyberangePage'
 import PeoplePage from './pages/PeoplePage'
 import CollaboratorsPage from './pages/CollaboratorsPage'
 import EventsPage from './pages/EventsPage'
@@ -49,7 +49,7 @@ function AnimatedRoutes() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/training" element={<TrainingPage />} />
         <Route path="/research" element={<ResearchPage />} />
-        <Route path="/cyberrange" element={<CyberangePage />} />
+        <Route path="/cyberange" element={<CyberangePage />} />
         <Route path="/team" element={<PeoplePage />} />
         <Route path="/collaborators" element={<CollaboratorsPage />} />
         <Route path="/events" element={<EventsPage />} />
