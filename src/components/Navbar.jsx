@@ -18,7 +18,7 @@ const dropdownLinks2 = [
 // Home, Cyberange, Events, Services & Training, Research & Resources, Team, Collaborations
 const navItems = [
   { type: 'link', name: 'Home', path: '/' },
-  { type: 'link', name: 'Cyberange', path: '/cyberrange' },
+  { type: 'link', name: 'Cyberange', path: '/cyberange' },
   { type: 'link', name: 'Events', path: '/events' },
   { type: 'menu', name: 'Services & Training', items: dropdownLinks2 },
   { type: 'menu', name: 'Research & Resources', items: dropdownLinks1 },
